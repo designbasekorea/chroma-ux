@@ -1,4 +1,4 @@
-# ux-color-engine
+# chroma-ux
 
 OKLCH 기반 UX/UI 디자인 토큰 생성 라이브러리. **런타임 의존성 0**, ESM/CJS 지원.
 
@@ -15,10 +15,10 @@ OKLCH 기반 UX/UI 디자인 토큰 생성 라이브러리. **런타임 의존�
 
 ```bash
 # Primary 색상만 넣으면 JSON 토큰 출력
-npx ux-color-engine 5B5FF5
+npx chroma-ux 5B5FF5
 
 # CSS 변수로 출력
-npx ux-color-engine #5B5FF5 --css
+npx chroma-ux #5B5FF5 --css
 ```
 
 ---
@@ -26,7 +26,7 @@ npx ux-color-engine #5B5FF5 --css
 ## 설치
 
 ```bash
-npm install ux-color-engine
+npm install chroma-ux
 ```
 
 ---
@@ -36,7 +36,7 @@ npm install ux-color-engine
 ### ESM
 
 ```javascript
-import { recommendTokensDual } from "ux-color-engine";
+import { recommendTokensDual } from "chroma-ux";
 
 const { light, dark } = recommendTokensDual({
   primaryHex: "#5B5FF5",
@@ -51,7 +51,7 @@ console.log(dark.tokens.background);
 ### CJS
 
 ```javascript
-const { recommendTokensDual } = require("ux-color-engine");
+const { recommendTokensDual } = require("chroma-ux");
 
 const result = recommendTokensDual({ primaryHex: "#5B5FF5" });
 ```
@@ -59,7 +59,7 @@ const result = recommendTokensDual({ primaryHex: "#5B5FF5" });
 ### JSON 내보내기
 
 ```javascript
-import { recommendTokensDualAsJson } from "ux-color-engine";
+import { recommendTokensDualAsJson } from "chroma-ux";
 
 const json = recommendTokensDualAsJson({ primaryHex: "#5B5FF5" });
 ```
@@ -93,8 +93,8 @@ const json = recommendTokensDualAsJson({ primaryHex: "#5B5FF5" });
 # 1. npm 로그인 (최초 1회)
 npm login
 
-# 2. 패키지명 중복 확인 (ux-color-engine이 이미 있으면 다른 이름 사용)
-npm search ux-color-engine
+# 2. 패키지명 중복 확인 (chroma-ux가 이미 있으면 다른 이름 사용)
+npm search chroma-ux
 
 # 3. package.json의 repository.url을 본인 GitHub으로 수정
 

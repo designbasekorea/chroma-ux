@@ -9,14 +9,14 @@ const primaryHex = hexArg ? ("#" + hexArg.replace(/^#/, "")) : null;
 
 if (!primaryHex) {
   console.error(`
-ux-color-engine — Primary 색상으로 라이트/다크 토큰 생성
+chroma-ux — Primary 색상으로 라이트/다크 토큰 생성
 
 사용법:
-  npx ux-color-engine <primary-hex>
+  npx chroma-ux <primary-hex>
 
 예시:
-  npx ux-color-engine 5B5FF5
-  npx ux-color-engine #5B5FF5
+  npx chroma-ux 5B5FF5
+  npx chroma-ux #5B5FF5
 
 옵션:
   --json    JSON 형식으로 출력 (기본)

@@ -1,5 +1,5 @@
 {
-  "name": "ux-color-engine",
+  "name": "chroma-ux",
   "version": "1.0.0",
   "description": "OKLCH 기반 UX/UI 토큰 생성기. Primary 고정, 라이트/다크 동시 생성, WCAG/CVD 검증. 런타임 의존성 0.",
   "license": "MIT",
@@ -7,7 +7,7 @@
   "main": "./dist/cjs/index.cjs",
   "module": "./dist/esm/index.js",
   "bin": {
-    "ux-color-engine": "./bin/cli.cjs"
+    "chroma-ux": "./bin/cli.cjs"
   },
   "exports": {
     ".": {
